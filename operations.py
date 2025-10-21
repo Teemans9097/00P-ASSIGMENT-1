@@ -30,15 +30,15 @@ borrow_history = []
 # Users: username -> {password, role, member_id (optional)}
 users = {
     # admins
-    "ramadan": {"password": "128", "role": "admin"},
-    "love": {"password": "126", "role": "admin"},
+    "Samba": {"password": "03040117", "role": "admin"},
+    "Fatima": {"password": "23", "role": "admin"},
     # staff (linked to member IDs)
-    "Briel": {"password": "briel01", "role": "staff", "member_id": "ST001"},
-    "Favour": {"password": "sia02", "role": "staff", "member_id": "ST002"},
+    "Dija": {"password": "dijal01", "role": "staff", "member_id": "D001"},
+    "TEE": {"password": "TEE02", "role": "staff", "member_id": "D002"},
     # students (linked)
-    "slimzy": {"password": "slimzypass", "role": "student", "member_id": "S001"},
-    "lexicon": {"password": "lexiconpass", "role": "student", "member_id": "S002"},
-    "galma": {"password": "galmapass", "role": "student", "member_id": "S003"},
+    "PC": {"password": "PC001", "role": "student", "member_id": "S001"},
+    "WOKOLOW": {"password": "WOKOLOW001", "role": "student", "member_id": "S002"},
+    "CHIEF": {"password": "CHIEF001", "role": "student", "member_id": "S003"},
 }
 
 # Borrow policy
@@ -210,3 +210,4 @@ def verify_login(username, password):
     if u and u["password"] == password:
         return True, u["role"]
     return False, None
+
